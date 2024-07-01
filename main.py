@@ -16,11 +16,11 @@ app = Flask(__name__)
 #     """
 #     return html
 
-def herоes():
+def person():
     return render_template("index.html")
 @app.route("/films/")
 def films():
-    return render_template("index.html")
+    return render_template("films.html")
 
 if __name__ == "__main__":
     app.run()
